@@ -36,8 +36,6 @@ def filter_photos():
     for root, dirs, files in os.walk(TARGET_DIR):
         for filename in files:
             file_path = os.path.join(root, filename)
-            if filename == "IMG-20220824-WA0020.jpg":
-                print('stop')
             try:
                 stats = os.stat(file_path)
                 
